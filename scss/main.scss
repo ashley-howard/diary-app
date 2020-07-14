@@ -1,0 +1,71 @@
+@import 'reset';
+
+body,
+textarea {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#switch-view {
+    background: #c0bfbf;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.primary-row {
+    display: flex;
+}
+
+.secondary-row {
+    display: flex;
+    height: 30px;
+    align-items: center;
+
+    div {
+        padding: 0 10px;
+    }
+
+    .arrows {
+        position: absolute;
+        right: 0;
+    }
+}
+
+#date-number {
+    font-size: 2em;
+}
+
+.grid {
+    display: flex;
+    width: 100%;
+    height: 85vh;
+    flex-wrap: wrap;
+    // border-top: 1px solid #e9e4e4;
+
+    &>div {
+        width: 49%;
+        height: 50%;
+        border: 1px solid #e9e4e4;
+    }
+}
+
+textarea {
+    width: 100%;
+    height: 93%;
+    border: 0;
+    padding: 0;
+    resize: none;
+}
+
+.title {
+    line-height: 27px;
+}
